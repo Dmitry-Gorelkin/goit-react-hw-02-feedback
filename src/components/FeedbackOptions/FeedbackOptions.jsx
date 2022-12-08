@@ -7,9 +7,9 @@ import {
 export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <FeedbackOptionsList>
-      {options.map((name, id) => {
+      {options.map(name => {
         return (
-          <FeedbackOptionsItem key={id} onClick={() => onLeaveFeedback(name)}>
+          <FeedbackOptionsItem key={name} onClick={() => onLeaveFeedback(name)}>
             {name}
           </FeedbackOptionsItem>
         );
